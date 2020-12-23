@@ -17,8 +17,8 @@ def start(id):
     if request.method == 'PUT':
         print('start')
         print(request.data)
-        api.start_container(id)
-        return 'start'
+        # api.start_container(id)
+        return json.dumps({"test": "tre"})
     # return json.dumps(api.stop_container(id))
 
 # # Press the green button in the gutter to run the script.
